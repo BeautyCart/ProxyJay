@@ -1,0 +1,29 @@
+{
+  "name": "proxyjay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sephora-Item-Page/ProxyJay.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sephora-Item-Page/ProxyJay/issues"
+  },
+  "homepage": "https://github.com/Sephora-Item-Page/ProxyJay#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.4",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}

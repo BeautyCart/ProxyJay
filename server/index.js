@@ -22,23 +22,11 @@ app.use('/checkout', createProxyMiddleware({
 }));
 
 
-// app.use('/reviews', createProxyMiddleware({
-//   target: `http://localhost:3000`,
-//   pathRewrite: {'/reviews': '/'},
-//   changeOrigin: true
-// }));
-// app.use('/reviews', createProxyMiddleware({
-//   target: `http://localhost:3000`,
-//   changeOrigin: true
-// }))
-
-
 app.use('/explorethis', createProxyMiddleware({
   target: `http://localhost:3141`,
   changeOrigin: true
 }));
 
-// app.use('/users/:userId', createProxyMiddleware({ target: `http://localhost:3141`, changeOrigin: true}));
 
 app.listen(port, () => {
   console.log('Proxy listening on port ' + port);

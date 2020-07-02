@@ -6,7 +6,7 @@ const cors = require('cors');
 
 const port = 8080;
 
-app.use(express.static(path.join(__dirname + '/../client')));
+app.use('/:productId', express.static(path.join(__dirname + '/../client')));
 
 app.use(cors());
 

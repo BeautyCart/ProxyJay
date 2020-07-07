@@ -1,5 +1,5 @@
 # What image do you want to start building on?
-FROM node:10
+FROM node:14.4.0-alpine3.12
 # Make a folder in your image where your app's source code can live
 RUN mkdir -p /src/app
 

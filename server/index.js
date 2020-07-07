@@ -11,19 +11,19 @@ app.use('/:productId', express.static(path.join(__dirname + '/../client')));
 app.use(cors());
 
 app.use('/photoGallery', createProxyMiddleware({
-  target: `http://localhost:3003`,
+  target: `http://13.57.199.50`,
   changeOrigin: true
 }));
 
 
 app.use('/checkout', createProxyMiddleware({
-  target: `http://localhost:4000`,
+  target: `http://54.193.123.212`,
   changeOrigin: true
 }));
 
 
 app.use('/explorethis', createProxyMiddleware({
-  target: `http://localhost:3141`,
+  target: `http://100.25.139.226`,
   changeOrigin: true
 }));
 
